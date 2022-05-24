@@ -38,9 +38,23 @@
 } */
 
 .movie > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 50px;
 }
+  /* overflow-y: auto;
+  flex-wrap: nowrap;
+  min-width: 500px;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body {
+   
+    font-family: 'Manrope', sans-serif;
+    background: #6872c8;
+    color: #fff
+}
+
 
 .topbar {
   height: 4.375rem;

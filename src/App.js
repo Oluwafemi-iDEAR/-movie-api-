@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'popper.js/dist/popper'
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
+// import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 import MyMovies from './Components/MyMovies';
 import Navbar from './Components/Navbar';
 
@@ -29,7 +32,7 @@ const App = () => {
   return(
     <>
     <Navbar heading='CycloVid' searchValue={searchValue} setSearchValue={setSearchValue}/>
-    <div className="container-fluid movie">
+    <div className="container-fluid movie col-md-6 ">
       <div className='row'>
       <MyMovies movies = {movies} />
       </div>
